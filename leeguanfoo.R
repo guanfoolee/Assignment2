@@ -1,0 +1,6 @@
+a<-makeCacheMatrix(matrix(c(-1,-2,1,1),2,2))
+cachesolve(a)
+solve(a$get())
+a$set(matrix(c(2,3,2,2),2,))
+cachesolve(a)
+solve(a$get())
